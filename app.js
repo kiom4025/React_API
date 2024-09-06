@@ -10,7 +10,7 @@ var subroute_valueRouter = require('./routes/Placeholder_Routes/valueResponse-Sa
 var subroute_valueRouter2 = require('./routes/Placeholder_Routes/valueResponse-Sample (with Subroute) 2');
 
 // preparing using front-end routes or path
-var course = require('./routes/courses');
+var courses = require('./routes/courses');
 
 var app = express();
 
@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', valueRouter);
-app.use('/courses', course);
+app.use('/courses', courses);
 app.use('/courseDetails', valueRouter);
 app.use('/enrollPage', valueRouter);
 app.use('/editContent', subroute_valueRouter);
