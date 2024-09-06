@@ -1,5 +1,5 @@
 var express = require('express');
-const { createCourse, getAllCourse } = require('../controller/Course-controller');
+const { createCourse, getAllCourse } = require('../controller/Course-controller(Without ORM)');
 var router = express.Router();
 
 

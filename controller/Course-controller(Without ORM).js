@@ -1,4 +1,4 @@
-const { createCourseInDB, getCourseFromDB } = require("../service/course-service")
+const { createCourseInDB, getCourseFromDB } = require("../service/course-service(Without ORM)")
 
 async function getAllCourse(req, res){
     const course = req.body;

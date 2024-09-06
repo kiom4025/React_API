@@ -10,7 +10,8 @@ var subroute_valueRouter = require('./routes/Placeholder_Routes/valueResponse-Sa
 var subroute_valueRouter2 = require('./routes/Placeholder_Routes/valueResponse-Sample (with Subroute) 2');
 
 // preparing using front-end routes or path
-var courses = require('./routes/courses');
+var coursesSample = require('./routes/courses(Without ORM)');
+var users = require('./routes/user');
 
 var app = express();
 
@@ -24,8 +25,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', valueRouter);
-app.use('/courses', courses);
+app.use('/',users);
+app.use('/coursesSample', coursesSample);
 app.use('/courseDetails', valueRouter);
 app.use('/enrollPage', valueRouter);
 app.use('/editContent', subroute_valueRouter);
@@ -46,6 +47,21 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+const mongoose = require('mongoose');
+
+// Connection URL
+const mongoURI = 'mongodb://localhost:27017/LMS-Fullstack_Assignment'; // Replace with your MongoDB URI
+
+// Connect to MongoDB
+mongoose.connect(mongoURI);
+const db = mongoose.connection;
+
+// Handle connection events
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => {
+  console.log('Connected to MongoDB');
 });
 
 module.exports = app;
