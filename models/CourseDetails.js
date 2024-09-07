@@ -12,11 +12,11 @@ const CourseSchema = new mongoose.Schema({
     createdBy: { type: String },
     classSchedule: { type: String },
     availableSlotDate: { type: Date },
-    ratingStarValue: { type: Double },
-    reviewCount: { type: Decimal128 },
-    totalPrice: { type: Decimal128 },
-    discountPercentage: { type: Double },
-    courseThumnail: { type: File },
+    ratingStarValue: { type: Number },
+    reviewCount: { type: Number },
+    totalPrice: { type: Number },
+    discountPercentage: { type: Number },
+    courseThumnail: { type: String },
 })
 
 

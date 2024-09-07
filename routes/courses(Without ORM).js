@@ -1,10 +1,10 @@
 var express = require('express');
-const { createCourse, getAllCourse } = require('../controller/Course-controller(Without ORM)');
+const { createCourse_test, getAllCourse_test } = require('../controller/Course-controller(Without ORM)');
 var router = express.Router();
 
 
-router.get('/', getAllCourse);
-router.post('/', createCourse);
+router.get('/', getAllCourse_test);
+router.post('/', createCourse_test);
 
 module.exports = router;
 

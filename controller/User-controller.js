@@ -6,8 +6,8 @@ async function getAllusers(req, res){
 }
 
 async function createUser(req,res){
-const Course = req.body;
-    const newCourse = await createUserUsingORM(Course);
+const User = req.body;
+    const newCourse = await createUserUsingORM(User);
     res.json(newCourse)
 }
 

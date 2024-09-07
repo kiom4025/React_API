@@ -1,15 +1,15 @@
-const { createCourseInDB, getCourseFromDB } = require("../service/course-service(Without ORM)")
+const { createCourseInDB_Test, getCourseFromDB_Test } = require("../service/course-service(Without ORM)")
 
-async function getAllCourse(req, res){
+async function getAllCourse_test(req, res){
     const course = req.body;
-    const CoursesAvailable = await getCourseFromDB(course);
+    const CoursesAvailable = await getCourseFromDB_Test(course);
     res.json(CoursesAvailable);
 }
 
-async function createCourse(req,res){
+async function createCourse_test(req,res){
 const Course = req.body;
-    const newCourse = await createCourseInDB(Course);
+    const newCourse = await createCourseInDB_Test(Course);
     res.json(newCourse)
 }
 
-module.exports = {getAllCourse,createCourse}
+module.exports = {getAllCourse_test,createCourse_test}

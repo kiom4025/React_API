@@ -1,8 +1,8 @@
-const { createUserFromDB, getUserFromDB } = require("../utilitize_dto/dbConnect-ORM");
+const { createUserInDB, getUserFromDB } = require("../utilitize_dto/dbConnect-User");
 
 
-async function createUserUsingORM(courseData){
-    var insertedCourse = await createUserFromDB(courseData);
+async function createUserUsingORM(userData){
+    var insertedCourse = await createUserInDB(userData);
     return insertedCourse;
 }
 

@@ -12,6 +12,7 @@ var subroute_valueRouter2 = require('./routes/Placeholder_Routes/valueResponse-S
 // preparing using front-end routes or path
 var coursesSample = require('./routes/courses(Without ORM)');
 var users = require('./routes/user');
+var courseCard = require('./routes/CourseCard')
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/',users);
 app.use('/coursesSample', coursesSample);
+app.use('/courses', courseCard);
 app.use('/courseDetails', valueRouter);
 app.use('/enrollPage', valueRouter);
 app.use('/editContent', subroute_valueRouter);

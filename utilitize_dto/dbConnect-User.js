@@ -1,6 +1,6 @@
 const Users = require('../models/userLogin');
 
-async function createUserFromDB(data) {
+async function createUserInDB(data) {
   try {
     const createdUser = await Users.create(data);
     return createdUser;
@@ -18,5 +18,8 @@ async function getUserFromDB() {
   }
 }
 
-module.exports = { createUserFromDB,getUserFromDB };
+module.exports = { 
+  createUserInDB,
+  getUserFromDB
+};
 

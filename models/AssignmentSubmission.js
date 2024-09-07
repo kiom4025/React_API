@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const AssignementSubmissionSchema = new mongoose.Schema({
-    UploadedFiles: { type: File, required: true},
+    UploadedFiles: { type: String, required: true},
     comments: { type: String },
 })
 
