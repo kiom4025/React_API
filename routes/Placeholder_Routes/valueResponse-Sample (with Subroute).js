@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+// editCourses
+// editAssignment
+
 // get method for parent route
 router.get('/',(req, res)=>{
     // 1- To return a string
@@ -24,6 +27,7 @@ router.post("/", (req,res)=>{
     //     message:"Post method called"
     // })
 })
+
 
 // get method for sub route
 router.get('/editAssignment',(req, res)=>{
