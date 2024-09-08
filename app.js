@@ -4,15 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-// place holder routes
-var valueRouter = require('./routes/Placeholder_Routes/valueResponse-Sample');
-var subroute_valueRouter = require('./routes/Placeholder_Routes/valueResponse-Sample (with Subroute)');
-var subroute_valueRouter2 = require('./routes/Placeholder_Routes/valueResponse-Sample (with Subroute) 2');
-
 // preparing using front-end routes or path
 var coursesSample = require('./routes/courses(Without ORM)');
 var users = require('./routes/user');
 var courseCard = require('./routes/CourseCard')
+var Add_Modify = require('./routes/Add_Modify');
+var Assignment_Table = require('./routes/Assignment_Table')
+var CourseDetails = require('./routes/CourseDetails');
 
 var app = express();
 
@@ -27,12 +25,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/',users);
-app.use('/coursesSample', coursesSample);
+app.use('/coursesSample', coursesSample); //Done to practice db connect without ORM
 app.use('/courses', courseCard);
-app.use('/courseDetails', valueRouter);
-app.use('/enrollPage', valueRouter);
-app.use('/editContent', subroute_valueRouter);
-app.use('/assignments', subroute_valueRouter2);
+app.use('/courseDetails', CourseDetails);
+app.use('/editContent', Add_Modify);
+app.use('/assignments', Assignment_Table);
 
 
 // catch 404 and forward to error handler

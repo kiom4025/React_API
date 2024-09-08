@@ -19,8 +19,18 @@ async function getAvailableCourseFromDB(findQuery) {
   }
 }
 
+async function getCourseDetailsFromDB(findQuery) {
+  try {
+    const CourseList = await CourseDetails.find(findQuery);
+    return CourseList;
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
 module.exports = { 
   createCourseInDB,
   getAvailableCourseFromDB,
+  getCourseDetailsFromDB
 };
 

@@ -1,0 +1,825 @@
+{
+	"info": {
+		"_postman_id": "c511183a-f7e5-457f-83a4-e5e1cbfe40a7",
+		"name": "localhost:8000",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37555458"
+	},
+	"item": [
+		{
+			"name": "Create courses without ORM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"database\":\"LMS-Fullstack_Assignment\",\r\n    \"collection\":\"course_test\",\r\n    \"dataToinsert\":{\r\n        \"course_id\":\"0001\",\r\n        \"course_name\":\"Full Stack\",\r\n        \"Course Description\":\"short Description of Full Stack\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/coursesSample",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"coursesSample"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create courses without ORM",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"database\":\"LMS-Fullstack_Assignment\",\r\n    \"collection\":\"course_test\",\r\n    \"dataToinsert\":{\r\n        \"course_id\":\"00011\",\r\n        \"course_name\":\"Full Stack\",\r\n        \"Course Description\":\"short Description of Full Stack\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/coursesSample",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"coursesSample"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3d-QrI1jY/oc7lWNljxlbCKQznoLbE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 04:44:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"acknowledged\": true,\n    \"insertedId\": \"66dd2babf84287d5ac99f177\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get course list without ORM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"database\":\"LMS-Fullstack_Assignment\",\r\n    \"collection\":\"course_test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/coursesSample",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"coursesSample"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get course list without ORM",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"database\":\"LMS-Fullstack_Assignment\",\r\n    \"collection\":\"course_test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/coursesSample",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"coursesSample"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1402"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"57a-aNUW49nkcsiSlBJqHMGAOIk9Pro\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 04:44:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"66da632a0ae14cc26dcc46c8\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of full Stack\"\n    },\n    {\n        \"_id\": \"66da651223eb349b0ae3efec\",\n        \"course_id\": \"0002\",\n        \"course_name\": \"Data Science\",\n        \"Course Description\": \"short Description of Data Science\"\n    },\n    {\n        \"_id\": \"66da653523eb349b0ae3efed\",\n        \"course_id\": \"0003\",\n        \"course_name\": \"Python\",\n        \"Course Description\": \"short Description of Python\"\n    },\n    {\n        \"_id\": \"66da654b23eb349b0ae3efee\",\n        \"course_id\": \"0003\",\n        \"course_name\": \"Python - Game Development\",\n        \"Course Description\": \"short Description of Python - Game Development\"\n    },\n    {\n        \"_id\": \"66da66d2da64e4fccdd8d33b\",\n        \"course_id\": \"0004\",\n        \"course_name\": \"Java - Full Stack\",\n        \"Course Description\": \"short Description of Java - Full Stack\"\n    },\n    {\n        \"_id\": \"66daee76b0591cd9d19f02fb\",\n        \"course_id\": \"0007\",\n        \"course_name\": \"MERN Stack\",\n        \"Course Description\": \"short Description of MERN Stack\"\n    },\n    {\n        \"_id\": \"66db0bf9d47ae386001a04fb\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66db0cfd7c211956dfc69fa5\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66dc48b12250f3b6ec49bd8a\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66dc48ba2250f3b6ec49bd8b\",\n        \"course_id\": \"00011\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "1.0 Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"moki2\",\r\n    \"password\":\"12345\",\r\n    \"remember\":\"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user4\",\r\n    \"phone\":\"987654321\",\r\n    \"agreement\":\"true\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "123"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7b-z/UFW/VYXWz/GIQZ917IHhTPrdA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 04:44:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"user4\",\n    \"phone\": \"987654321\",\n    \"agreement\": true,\n    \"email\": \"test@gmail.com\",\n    \"_id\": \"66dd2b96f84287d5ac99f175\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "1.1 Get User list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1.1 Get User list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "373"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"175-qnaYr3OxhvydHADrQm0zu9Z8VjU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 04:43:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"66dc4b8e5a11dd02e2f6ff45\",\n        \"username\": \"user1\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66dc4baa5a11dd02e2f6ff47\",\n        \"username\": \"user2\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66dd2a8ab1423c194cfa1220\",\n        \"username\": \"user3\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "2. get details for course card",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1191"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4a7-S96vKeqj8qcj32D/sHBiWlrILXE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 04:43:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"66dc4d835a11dd02e2f6ff4a\",\n        \"courseTitle\": \"python\",\n        \"shortDescription\": \"short description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    },\n    {\n        \"_id\": \"66dc4db25a11dd02e2f6ff4c\",\n        \"courseTitle\": \"Data Science\",\n        \"shortDescription\": \"short description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    },\n    {\n        \"_id\": \"66dc846a6fb1e5c226d257f9\",\n        \"courseTitle\": \"Java Full Stack\",\n        \"shortDescription\": \"short description input text 11\",\n        \"difficulty\": \"Advanced\",\n        \"courseDuration\": \"12 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    },\n    {\n        \"_id\": \"66dd1b14f45cea3c2f5923d6\",\n        \"courseTitle\": \"Python Full Stack\",\n        \"shortDescription\": \"short description input text 11\",\n        \"difficulty\": \"Advanced\",\n        \"courseDuration\": \"12 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "3. get details for Assignment Table",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "2 get details for course card Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/assignments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"assignments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "400"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"190-i12IBpmbw88pt+r1+8Nn5jS1ls0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 04:39:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"66dd211eca200b553deb8fc8\",\n        \"topic\": \"Assignment 1\",\n        \"description\": \"description 1\",\n        \"dueDate\": \"2024-08-27T18:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66dd2132ca200b553deb8fca\",\n        \"topic\": \"Assignment 2\",\n        \"description\": \"description 2\",\n        \"dueDate\": \"2024-08-27T18:30:00.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66dd2149ca200b553deb8fce\",\n        \"topic\": \"Assignment 3\",\n        \"description\": \"description 3\",\n        \"dueDate\": \"2024-08-27T18:30:00.000Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "4.0 Get course and assignment title list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/editContent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"editContent"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "437"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b5-oMzsP3qtme3RqLvRD98ph4Ny8ZA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 04:39:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        {\n            \"_id\": \"66dc4d835a11dd02e2f6ff4a\",\n            \"courseTitle\": \"python\"\n        },\n        {\n            \"_id\": \"66dc4db25a11dd02e2f6ff4c\",\n            \"courseTitle\": \"Data Science\"\n        },\n        {\n            \"_id\": \"66dc846a6fb1e5c226d257f9\",\n            \"courseTitle\": \"Java Full Stack\"\n        },\n        {\n            \"_id\": \"66dd1b14f45cea3c2f5923d6\",\n            \"courseTitle\": \"Python Full Stack\"\n        }\n    ],\n    [\n        {\n            \"_id\": \"66dd211eca200b553deb8fc8\",\n            \"topic\": \"Assignment 1\"\n        },\n        {\n            \"_id\": \"66dd2132ca200b553deb8fca\",\n            \"topic\": \"Assignment 2\"\n        },\n        {\n            \"_id\": \"66dd2149ca200b553deb8fce\",\n            \"topic\": \"Assignment 3\"\n        }\n    ]\n]"
+				}
+			]
+		},
+		{
+			"name": "4.1 Create Course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseTitle\":\"Python Full Stack\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/editContent/editCourses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"editContent",
+						"editCourses"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": ".0 Create Course",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courseTitle\":\"Python Full Stack\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/editContent/editCourses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"editContent",
+								"editCourses"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "536"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"218-81HP2+0uDxE6ovIbKFXvs8E3ai4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 03:33:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"courseTitle\": \"Python Full Stack\",\n    \"shortDescription\": \"short description input text 11\",\n    \"description\": \"description input text 11\",\n    \"difficulty\": \"Advanced\",\n    \"courseDuration\": \"12 months\",\n    \"languageSelection\": [\n        \"tamil\",\n        \"english\"\n    ],\n    \"skillscovered\": [\n        \"html\",\n        \"css\",\n        \"react\"\n    ],\n    \"createdBy\": \"Mathi\",\n    \"classSchedule\": \"4 weeks alternate days\",\n    \"availableSlotDate\": \"2024-08-27T18:30:00.000Z\",\n    \"ratingStarValue\": 3,\n    \"reviewCount\": 117,\n    \"totalPrice\": 5000,\n    \"discountPercentage\": 12,\n    \"courseThumnail\": \"/uploadedfile/image1.jpeg\",\n    \"_id\": \"66dd1b14f45cea3c2f5923d6\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "4.2 Create Assignment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseTitle\":\"Python Full Stack\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/editContent/editCourses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"editContent",
+						"editCourses"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "3.1 Create Course Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"topic\":\"Assignment 3\",\r\n    \"description\":\"description 3\",\r\n    \"dueDate\":\"2024-08-27T18:30:00.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/editContent/editAssignment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"editContent",
+								"editAssignment"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"84-UDzwDuj1MKS9jBr6alwB9cT+Yu8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 04:00:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"topic\": \"Assignment 3\",\n    \"description\": \"description 3\",\n    \"dueDate\": \"2024-08-27T18:30:00.000Z\",\n    \"_id\": \"66dd2149ca200b553deb8fce\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "5. get Course details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"courseTitle\":\"python\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/courseDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"courseDetails"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "3. get details for Assignment Table Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"courseTitle\":\"python\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/courseDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"courseDetails"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "524"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20c-VJDCJV34mx3mX/cZKE8B9t/FIBE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 08 Sep 2024 04:39:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"66dc4d835a11dd02e2f6ff4a\",\n        \"courseTitle\": \"python\",\n        \"shortDescription\": \"short description input text\",\n        \"description\": \"description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"languageSelection\": [\n            \"tamil\",\n            \"english\"\n        ],\n        \"skillscovered\": [\n            \"html\",\n            \"css\",\n            \"react\"\n        ],\n        \"createdBy\": \"Mathi\",\n        \"classSchedule\": \"4 weeks alternate days\",\n        \"availableSlotDate\": \"2024-08-27T18:30:00.000Z\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"totalPrice\": 5000,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}

@@ -1,4 +1,5 @@
-const { getAvailableCourseUsingORM, createCourseUsingORM } = require("../service/Course-Service");
+const { getAssignmentUsingORM } = require("../service/Assignment-Service");
+const { getAvailableCourseUsingORM, createCourseUsingORM, getCourseDetailsUsingORM } = require("../service/Course-Service");
 
 async function getAvailableCourseForCard(req, res){
     // To get selective data using projection flags
@@ -19,10 +20,17 @@ async function getAvailableCourseForCard(req, res){
     res.json(CoursesAvailable);
 }
 
-async function getAvailableCourseForNavBar(req, res){
+async function getAvailableCourse(req, res){
+    const findquery = req.body;
+    const CoursesAvailable = await getCourseDetailsUsingORM(findquery);
+    res.json(CoursesAvailable);
+}
+
+async function getCourseAssignmentForNavBar(req, res){
     // To get selective data using projection flags
     const CoursesAvailable = await getAvailableCourseUsingORM({ courseTitle:1 });
-    res.json(CoursesAvailable);
+    const AssignmentAvailable = await getAssignmentUsingORM({ topic:1 })
+    res.send([CoursesAvailable,AssignmentAvailable]);
 }
 
 async function createCourse(req,res){
@@ -31,4 +39,9 @@ async function createCourse(req,res){
         res.json(newCourse)
 }
 
-module.exports = {getAvailableCourseForCard, createCourse, getAvailableCourseForNavBar}
+module.exports = {
+    getAvailableCourseForCard, 
+    createCourse, 
+    getCourseAssignmentForNavBar,
+    getAvailableCourse
+}
