@@ -6,6 +6,7 @@ async function createUserInDB(data) {
     return createdUser;
   } catch (error) {
     console.error(error.message);
+    return error.message;
   }
 }
 
@@ -15,6 +16,7 @@ async function getUserFromDB() {
     return userList;
   } catch (error) {
     console.error(error.message);
+    return error.message;
   }
 }
 
