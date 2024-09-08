@@ -2,6 +2,11 @@ var express = require('express');
 const { createCourse_test, getAllCourse_test } = require('../controller/Course-controller(Without ORM)');
 var router = express.Router();
 
+// app level routes level
+router.use((req, res, next) => {
+    console.log("Middleware call from Course Route (Without ORM)");
+    next();
+});
 
 router.get('/', getAllCourse_test);
 router.post('/', createCourse_test);

@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var fs = require('fs');
+var rfs = require('rotating-file-stream')
 
 // preparing using front-end routes or path
 var coursesSample = require('./routes/courses(Without ORM)');
@@ -14,17 +16,44 @@ var CourseDetails = require('./routes/CourseDetails');
 
 var app = express();
 
+// app level middleware
+app.use((req, res, next) => {
+  console.log("Middleware call from app level");
+  next();
+});
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+// --------- Logger (Start)
+
+// create a write stream (in append mode) {This is to create error log in a single file}
+// var accessLogStream = fs.createWriteStream(path.join(__dirname, 'accessNew.log'), { flags: 'a' }); 
+
+// create a rotating write stream {This is to create error log in separate file for each day}
+var accessLogStream = rfs.createStream('access.log', {
+  interval: '1d', // rotate daily
+  path: path.join(__dirname, 'log')
+})
+
+// 1. Error Log to the console
 app.use(logger('dev'));
+// 2. Customized Error Log (ref: https://www.npmjs.com/package/morgan#short)
+// To get the log in the format we want - We need to place the respective token (ref above site) in order and we can also keep delimiter like '|' in-between token as per our needs
+app.use(logger(':date[web]  :remote-addr >> :method > :url | :status | :http-version | :response-time ms | :remote-user', { stream: accessLogStream }));
+// 3. Pre-Defined Error Log Format
+// app.use(logger('combined', { stream: accessLogStream }));
+
+// --------- Logger (End)
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/',users);
+app.use('/', users);
 app.use('/coursesSample', coursesSample); //Done to practice db connect without ORM
 app.use('/courses', courseCard);
 app.use('/courseDetails', CourseDetails);
@@ -33,12 +62,12 @@ app.use('/assignments', Assignment_Table);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
