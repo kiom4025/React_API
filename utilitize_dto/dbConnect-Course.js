@@ -13,7 +13,7 @@ async function createCourseInDB(data) {
 
 async function getAvailableCourseFromDB(findQuery) {
   try {
-    const CourseList = await CourseDetails.find({},findQuery);
+    const CourseList = await CourseDetails.find({}, findQuery);
     return CourseList;
   } catch (error) {
     console.error(error.message);
@@ -31,7 +31,7 @@ async function getCourseDetailsFromDB(findQuery) {
   }
 }
 
-module.exports = { 
+module.exports = {
   createCourseInDB,
   getAvailableCourseFromDB,
   getCourseDetailsFromDB

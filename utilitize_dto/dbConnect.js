@@ -37,5 +37,5 @@ async function getFromDB(data) {
   }
 }
 
-module.exports = { insertIntodb,getFromDB };
+module.exports = { insertIntodb, getFromDB };
 

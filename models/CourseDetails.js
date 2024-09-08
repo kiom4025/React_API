@@ -2,7 +2,7 @@ const { Double, Decimal128 } = require('mongodb');
 const mongoose = require('mongoose');
 
 const CourseSchema = new mongoose.Schema({
-    courseTitle: { type: String, unique: true},
+    courseTitle: { type: String, unique: true },
     shortDescription: { type: String },
     description: { type: String },
     difficulty: { type: String },

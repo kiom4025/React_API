@@ -20,7 +20,7 @@ async function getUserFromDB() {
   }
 }
 
-module.exports = { 
+module.exports = {
   createUserInDB,
   getUserFromDB
 };

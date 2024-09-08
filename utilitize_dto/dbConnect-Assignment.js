@@ -13,7 +13,7 @@ async function createAssignmentInDB(data) {
 
 async function getAssignmentFromDB(findQuery) {
   try {
-    const CourseList = await AssignmentDetails.find({},findQuery);
+    const CourseList = await AssignmentDetails.find({}, findQuery);
     return CourseList;
   } catch (error) {
     console.error(error.message);
@@ -21,7 +21,7 @@ async function getAssignmentFromDB(findQuery) {
   }
 }
 
-module.exports = { 
+module.exports = {
   createAssignmentInDB,
   getAssignmentFromDB,
 };
