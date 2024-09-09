@@ -198,7 +198,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"user6\",\r\n    \"phone\":\"987654321\",\r\n    \"agreement\":\"true\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"username\":\"user7\",\r\n    \"phone\":\"987654321\",\r\n    \"agreement\":\"true\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -246,7 +246,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": "html",
 					"header": [
 						{
 							"key": "X-Powered-By",
@@ -254,19 +254,19 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
+							"value": "text/html; charset=utf-8"
 						},
 						{
 							"key": "Content-Length",
-							"value": "123"
+							"value": "14"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"7b-5zuMV3A6lY13bcXqgnG1UUb8PGs\""
+							"value": "W/\"e-1SRcrNZ5I8fbdufDX3LT0U+ETt8\""
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 09 Sep 2024 03:39:23 GMT"
+							"value": "Mon, 09 Sep 2024 07:56:18 GMT"
 						},
 						{
 							"key": "Connection",
@@ -278,7 +278,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"username\": \"user7\",\n    \"phone\": \"987654321\",\n    \"agreement\": true,\n    \"email\": \"test@gmail.com\",\n    \"_id\": \"66de6deb576b8e883cbd394d\",\n    \"__v\": 0\n}"
+					"body": "New user added"
 				},
 				{
 					"name": "Error Response",
@@ -287,7 +287,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\":\"user7\",\r\n    \"phone\":\"987654321\",\r\n    \"agreement\":\"true\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"username\":\"user6\",\r\n    \"phone\":\"987654321\",\r\n    \"agreement\":\"true\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -320,15 +320,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "118"
+							"value": "19"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"76-CASST4yh1EldHWDEjNtpuOCAJEU\""
+							"value": "W/\"13-W7lL+t9KBLxrMaMpjF8Zp96tZ2k\""
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 09 Sep 2024 03:52:04 GMT"
+							"value": "Mon, 09 Sep 2024 07:53:58 GMT"
 						},
 						{
 							"key": "Connection",
@@ -340,7 +340,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "E11000 duplicate key error collection: LMS-Fullstack_Assignment.users index: username_1 dup key: { username: \"user7\" }"
+					"body": "User already exists"
 				}
 			]
 		},
@@ -632,7 +632,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"courseTitle\":\"Python Full Stack\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
+					"raw": "{\r\n    \"courseTitle\":\"New Course 2\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"5 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -660,7 +660,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"courseTitle\":\"New Course\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"All Day\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":5,\r\n    \"reviewCount\":500,\r\n    \"totalPrice\":3000,\r\n    \"discountPercentage\":30,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
+							"raw": "{\r\n    \"courseTitle\":\"New Course 2\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"5 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -682,7 +682,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": "html",
 					"header": [
 						{
 							"key": "X-Powered-By",
@@ -690,19 +690,19 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
+							"value": "text/html; charset=utf-8"
 						},
 						{
 							"key": "Content-Length",
-							"value": "514"
+							"value": "16"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"202-/sXg07TaqRUzr7MMboQCdtNmsHE\""
+							"value": "W/\"10-YAhMhI8ARCKGVXS7cVqmGPRNxS4\""
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 09 Sep 2024 03:42:21 GMT"
+							"value": "Mon, 09 Sep 2024 07:58:48 GMT"
 						},
 						{
 							"key": "Connection",
@@ -714,7 +714,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"courseTitle\": \"New Course\",\n    \"shortDescription\": \"short description input text 11\",\n    \"description\": \"description input text 11\",\n    \"difficulty\": \"Advanced\",\n    \"courseDuration\": \"12 months\",\n    \"languageSelection\": [\n        \"tamil\",\n        \"english\"\n    ],\n    \"skillscovered\": [\n        \"html\",\n        \"css\",\n        \"react\"\n    ],\n    \"createdBy\": \"Mathi\",\n    \"classSchedule\": \"All Day\",\n    \"availableSlotDate\": \"2024-08-27T18:30:00.000Z\",\n    \"ratingStarValue\": 5,\n    \"reviewCount\": 500,\n    \"totalPrice\": 3000,\n    \"discountPercentage\": 30,\n    \"courseThumnail\": \"/uploadedfile/image1.jpeg\",\n    \"_id\": \"66de6e9d576b8e883cbd3954\",\n    \"__v\": 0\n}"
+					"body": "New course added"
 				},
 				{
 					"name": "Error Response",
@@ -723,7 +723,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"courseTitle\":\"Python Full Stack\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
+							"raw": "{\r\n    \"courseTitle\":\"New Course 2\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"5 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -757,15 +757,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "138"
+							"value": "21"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"8a-VEa+fRLhow7B/Ry8sRKLb0fi3qM\""
+							"value": "W/\"15-E37xhxEiz2jTzVoXY7nAhmR2Do8\""
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 09 Sep 2024 06:34:49 GMT"
+							"value": "Mon, 09 Sep 2024 07:59:12 GMT"
 						},
 						{
 							"key": "Connection",
@@ -777,7 +777,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "E11000 duplicate key error collection: LMS-Fullstack_Assignment.courses index: courseTitle_1 dup key: { courseTitle: \"Python Full Stack\" }"
+					"body": "Course already exists"
 				}
 			]
 		},
@@ -788,7 +788,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"courseTitle\":\"Python Full Stack\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
+					"raw": "{\r\n    \"topic\":\"Assignment 6\",\r\n    \"description\":\"description 6\",\r\n    \"dueDate\":\"2024-08-27T18:30:00.000Z\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -796,7 +796,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/editContent/editCourses",
+					"raw": "http://localhost:8000/editContent/editAssignment",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -804,7 +804,7 @@
 					"port": "8000",
 					"path": [
 						"editContent",
-						"editCourses"
+						"editAssignment"
 					]
 				}
 			},
@@ -816,7 +816,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"topic\":\"Assignment 4\",\r\n    \"description\":\"description 4\",\r\n    \"dueDate\":\"2024-08-27T18:30:00.000Z\"\r\n}",
+							"raw": "{\r\n    \"topic\":\"Assignment 5\",\r\n    \"description\":\"description 5\",\r\n    \"dueDate\":\"2024-08-27T18:30:00.000Z\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -838,7 +838,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "json",
+					"_postman_previewlanguage": "html",
 					"header": [
 						{
 							"key": "X-Powered-By",
@@ -846,19 +846,19 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
+							"value": "text/html; charset=utf-8"
 						},
 						{
 							"key": "Content-Length",
-							"value": "132"
+							"value": "20"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"84-NHPrsE/brqryKUiRKivtwiQCUuA\""
+							"value": "W/\"14-sQImY/QdnEKV7BOxdyT8Q36WKCo\""
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 09 Sep 2024 03:42:43 GMT"
+							"value": "Mon, 09 Sep 2024 08:01:19 GMT"
 						},
 						{
 							"key": "Connection",
@@ -870,7 +870,70 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"topic\": \"Assignment 4\",\n    \"description\": \"description 4\",\n    \"dueDate\": \"2024-08-27T18:30:00.000Z\",\n    \"_id\": \"66de6eb3576b8e883cbd3956\",\n    \"__v\": 0\n}"
+					"body": "New assignment added"
+				},
+				{
+					"name": "Error Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"topic\":\"Assignment 5\",\r\n    \"description\":\"description 5\",\r\n    \"dueDate\":\"2024-08-27T18:30:00.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/editContent/editAssignment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"editContent",
+								"editAssignment"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-7KKoik0h1mV8RgdsGONSw0GIekU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Sep 2024 08:01:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Assignment Topic already exists"
 				}
 			]
 		},
@@ -965,6 +1028,294 @@
 					],
 					"cookie": [],
 					"body": "[\n    {\n        \"_id\": \"66dc4d835a11dd02e2f6ff4a\",\n        \"courseTitle\": \"python\",\n        \"shortDescription\": \"short description input text\",\n        \"description\": \"description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"languageSelection\": [\n            \"tamil\",\n            \"english\"\n        ],\n        \"skillscovered\": [\n            \"html\",\n            \"css\",\n            \"react\"\n        ],\n        \"createdBy\": \"Mathi\",\n        \"classSchedule\": \"2 days in a week\",\n        \"availableSlotDate\": \"2024-08-27T18:30:00.000Z\",\n        \"ratingStarValue\": 5,\n        \"reviewCount\": 100,\n        \"totalPrice\": 5000,\n        \"discountPercentage\": 8,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Authenticate and create token for user or admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"user1\",\r\n    \"password\":\"987654321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/auth/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Response 'user'",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user1\",\r\n    \"password\":\"987654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "185"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b9-Yblu52fB7py8rolmOfmO5rK/MoU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Sep 2024 07:27:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzI1ODY2ODI4LCJleHAiOjE3MjU4NzA0Mjh9.asVLdfvFgLrRRGNQTuF0-rvkvj0aSAAQqLCmGui_240\"\n}"
+				},
+				{
+					"name": "Success Response 'admin'",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "admin",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user1\",\r\n    \"password\":\"987654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "185"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b9-Yblu52fB7py8rolmOfmO5rK/MoU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Sep 2024 07:27:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzI1ODY2ODI4LCJleHAiOjE3MjU4NzA0Mjh9.asVLdfvFgLrRRGNQTuF0-rvkvj0aSAAQqLCmGui_240\"\n}"
+				},
+				{
+					"name": "Invalid User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"use\",\r\n    \"password\":\"987654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"32-Qpzx8TJNMGx8OO3OAbysrOppmXM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Sep 2024 07:32:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Invalid User - Authentication failed\"\n}"
+				},
+				{
+					"name": "Wrong password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user1\",\r\n    \"password\":\"98765432\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/auth/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39-saqfFUHOL7LXD4AvOeG6iF8eeto\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Sep 2024 07:33:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Wrong Password - User Authentication failed\"\n}"
 				}
 			]
 		}

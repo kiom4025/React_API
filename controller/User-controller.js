@@ -18,9 +18,10 @@ async function createUser(req, res) {
     try {
         const User = req.body;
         const newCourse = await createUserUsingORM(User);
-        res.status(200).json(newCourse)
+        res.status(200).send("New user added")
     } catch (e) {
-        res.status(400).send(e.message);
+        console.log(e.message);
+        res.status(400).send("User already exists");
         /* 
         Staus Code - 400
         Specifies - Bad Request

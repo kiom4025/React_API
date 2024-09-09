@@ -64,13 +64,14 @@ async function createCourse(req, res) {
     try {
         const User = req.body;
         const newCourse = await createCourseUsingORM(User);
-        res.status(200).json(newCourse)
+        res.status(200).send("New course added")
     } catch (e) {
-        res.status(400).send(e.message);
+        console.log(e.message);
+        res.status(400).send("Course already exists");
         /* 
         Staus Code - 400
         Specifies - Bad Request
-            As an indication that the user is already present
+            As an indication that the course is already present
         */
     }
 }

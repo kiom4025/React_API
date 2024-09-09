@@ -13,6 +13,7 @@ var courseCard = require('./routes/CourseCard')
 var Add_Modify = require('./routes/Add_Modify');
 var Assignment_Table = require('./routes/Assignment_Table')
 var CourseDetails = require('./routes/CourseDetails');
+var authRouter = require('./routes/Auth');
 
 var app = express();
 
@@ -42,7 +43,7 @@ var accessLogStream = rfs.createStream('access.log', {
 app.use(logger('dev'));
 // 2. Customized Error Log (ref: https://www.npmjs.com/package/morgan#short)
 // To get the log in the format we want - We need to place the respective token (ref above site) in order and we can also keep delimiter like '|' in-between token as per our needs
-app.use(logger('\n"Date_Time": :date[web] \n"IP": :remote-addr \n"Method_and_Route": ":method > :url" \n"StatusCode": :status \n"HTTPversion": :http-version \n"ResponseTime": :response-time ms \n"User": ":remote-user"', { stream: accessLogStream }));
+app.use(logger('"Date_Time": :date[web] | "IP": :remote-addr | "Method_and_Route": ":method > :url" | "StatusCode": :status | "HTTPversion": :http-version | "ResponseTime": :response-time ms | "User": ":remote-user"', { stream: accessLogStream }));
 // 3. Pre-Defined Error Log Format
 // app.use(logger('combined', { stream: accessLogStream }));
 
@@ -53,6 +54,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/auth', authRouter);
 app.use('/users', users);
 app.use('/coursesSample', coursesSample); //Done to practice db connect without ORM
 app.use('/coursesCard', courseCard);

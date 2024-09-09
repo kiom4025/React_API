@@ -20,13 +20,14 @@ async function createAssignment(req, res) {
     try {
         const Assignment = req.body;
         const newCourse = await createAssignmentUsingORM(Assignment);
-        res.status(200).json(newCourse);
+        res.status(200).send("New assignment added");
     } catch (e) {
-        res.status(400).send(e.message);
+        console.log(e.message);
+        res.status(400).send("Assignment Topic already exists");
         /* 
         Staus Code - 400
         Specifies - Bad Request
-            As an indication that the user is already present
+            As an indication that the assignment topic already present
         */
     }
 }
