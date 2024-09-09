@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var fs = require('fs');
 var rfs = require('rotating-file-stream')
+const jwt = require('jsonwebtoken');
 
 // preparing using front-end routes or path
 var coursesSample = require('./routes/courses(Without ORM)');
@@ -54,7 +55,30 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+function authenticateJWT(req, res, next) {
+  const token = req.headers.authorization;
+  console.log("token", token)
+  jwt.verify(token, 'dev-admin', (err, user) => {
+    if (err) {
+      if (err.name === 'TokenExpiredError') {
+        return res.status(401).json({ error: 'Token has expired.' }); //401 Unauthorized
+      }
+      return res.status(403).json({ error: 'Access denied. Invalid token.' }); //403 Forbidden
+    }
+    else {
+      // // Check user role
+      // if (user.role !== 'admin') {
+      //   return res.status(403).json({ error: 'Access denied. Insufficient privileges.' }); //403 Forbidden
+      // }
+      req.user = user;
+      next();
+    }
+  });
+}
+
+
 app.use('/auth', authRouter);
+app.use('/', authenticateJWT);
 app.use('/users', users);
 app.use('/coursesSample', coursesSample); //Done to practice db connect without ORM
 app.use('/coursesCard', courseCard);

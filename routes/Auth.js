@@ -13,11 +13,11 @@ router.post('/authenticate', async (req, res) => {
     if (!user) {
         res.status(401).json({ message: 'Invalid User - Authentication failed' });
     } else {
-        if (bcrypt.compareSync(password, user.phone)) 
+        if (bcrypt.compareSync(password, user.phone))
         // if (password == user.phone) //condition used before implementing encryption in create user
-            {
+        {
             // const token = jwt.sign({ username, role: 'user' }, "hello-world", { expiresIn: '1h' });
-            const token = jwt.sign({ username, role: (isAdmin) ? 'admin' : 'user' }, (isAdmin) ? 'dev-admin' : 'hello-world', { expiresIn: '1h' });
+            const token = jwt.sign({ username, role: (isAdmin==='true') ? 'admin' : 'user' }, 'dev-admin', { expiresIn: '1h' });
             res.json({ token });
         } else {
             res.status(401).json({ message: 'Wrong Password - User Authentication failed' });

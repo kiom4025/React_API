@@ -1,5 +1,6 @@
 var express = require('express');
 const { getAllusers, createUser } = require('../controller/User-controller');
+const { authroziedRole } = require('../controller/authorizeRole');
 var router = express.Router();
 
 // app level routes level
@@ -9,6 +10,6 @@ router.use((req, res, next) => {
 });
 
 router.get('/', getAllusers);
-router.post('/', createUser);
+router.post('/', authroziedRole('admin'), createUser);
 
 module.exports = router;
