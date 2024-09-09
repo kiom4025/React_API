@@ -59,7 +59,8 @@ function authenticateJWT(req, res, next) {
   const token = req.headers.authorization;
   console.log("token", token)
   jwt.verify(token, 'dev-admin', (err, user) => {
-    if (err) {
+    if (token === undefined) return res.status(401).json({ error: 'Token missing.' }); //401 Unauthorized
+    else if (err) {
       if (err.name === 'TokenExpiredError') {
         return res.status(401).json({ error: 'Token has expired.' }); //401 Unauthorized
       }
