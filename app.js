@@ -42,7 +42,7 @@ var accessLogStream = rfs.createStream('access.log', {
 app.use(logger('dev'));
 // 2. Customized Error Log (ref: https://www.npmjs.com/package/morgan#short)
 // To get the log in the format we want - We need to place the respective token (ref above site) in order and we can also keep delimiter like '|' in-between token as per our needs
-app.use(logger(':date[web]  :remote-addr >> :method > :url | :status | :http-version | :response-time ms | :remote-user', { stream: accessLogStream }));
+app.use(logger('\n"Date_Time": :date[web] \n"IP": :remote-addr \n"Method_and_Route": ":method > :url" \n"StatusCode": :status \n"HTTPversion": :http-version \n"ResponseTime": :response-time ms \n"User": ":remote-user"', { stream: accessLogStream }));
 // 3. Pre-Defined Error Log Format
 // app.use(logger('combined', { stream: accessLogStream }));
 
