@@ -53,12 +53,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', users);
+app.use('/users', users);
 app.use('/coursesSample', coursesSample); //Done to practice db connect without ORM
-app.use('/courses', courseCard);
+app.use('/coursesCard', courseCard);
 app.use('/courseDetails', CourseDetails);
 app.use('/editContent', Add_Modify);
-app.use('/assignments', Assignment_Table);
+app.use('/assignmentTable', Assignment_Table);
 
 
 // catch 404 and forward to error handler

@@ -34,13 +34,13 @@
 			},
 			"response": [
 				{
-					"name": "Create courses without ORM",
+					"name": "Success Response",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"database\":\"LMS-Fullstack_Assignment\",\r\n    \"collection\":\"course_test\",\r\n    \"dataToinsert\":{\r\n        \"course_id\":\"00011\",\r\n        \"course_name\":\"Full Stack\",\r\n        \"Course Description\":\"short Description of Full Stack\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"database\":\"LMS-Fullstack_Assignment\",\r\n    \"collection\":\"course_test\",\r\n    \"dataToinsert\":{\r\n        \"course_id\":\"00012\",\r\n        \"course_name\":\"New Course\",\r\n        \"Course Description\":\"short Description of Full Stack\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -77,11 +77,11 @@
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"3d-QrI1jY/oc7lWNljxlbCKQznoLbE\""
+							"value": "W/\"3d-Sbx6h2NPGRcCh1DbwcpG70uJg1w\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 04:44:27 GMT"
+							"value": "Mon, 09 Sep 2024 03:38:24 GMT"
 						},
 						{
 							"key": "Connection",
@@ -93,7 +93,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"acknowledged\": true,\n    \"insertedId\": \"66dd2babf84287d5ac99f177\"\n}"
+					"body": "{\n    \"acknowledged\": true,\n    \"insertedId\": \"66de6db0576b8e883cbd394c\"\n}"
 				}
 			]
 		},
@@ -128,7 +128,7 @@
 			},
 			"response": [
 				{
-					"name": "Get course list without ORM",
+					"name": "Success Response",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -167,15 +167,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "1402"
+							"value": "1676"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"57a-aNUW49nkcsiSlBJqHMGAOIk9Pro\""
+							"value": "W/\"68c-kH95GO5AKGlrFJ8LXLhE1RgH4cA\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 04:44:14 GMT"
+							"value": "Mon, 09 Sep 2024 03:38:40 GMT"
 						},
 						{
 							"key": "Connection",
@@ -187,7 +187,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"66da632a0ae14cc26dcc46c8\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of full Stack\"\n    },\n    {\n        \"_id\": \"66da651223eb349b0ae3efec\",\n        \"course_id\": \"0002\",\n        \"course_name\": \"Data Science\",\n        \"Course Description\": \"short Description of Data Science\"\n    },\n    {\n        \"_id\": \"66da653523eb349b0ae3efed\",\n        \"course_id\": \"0003\",\n        \"course_name\": \"Python\",\n        \"Course Description\": \"short Description of Python\"\n    },\n    {\n        \"_id\": \"66da654b23eb349b0ae3efee\",\n        \"course_id\": \"0003\",\n        \"course_name\": \"Python - Game Development\",\n        \"Course Description\": \"short Description of Python - Game Development\"\n    },\n    {\n        \"_id\": \"66da66d2da64e4fccdd8d33b\",\n        \"course_id\": \"0004\",\n        \"course_name\": \"Java - Full Stack\",\n        \"Course Description\": \"short Description of Java - Full Stack\"\n    },\n    {\n        \"_id\": \"66daee76b0591cd9d19f02fb\",\n        \"course_id\": \"0007\",\n        \"course_name\": \"MERN Stack\",\n        \"Course Description\": \"short Description of MERN Stack\"\n    },\n    {\n        \"_id\": \"66db0bf9d47ae386001a04fb\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66db0cfd7c211956dfc69fa5\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66dc48b12250f3b6ec49bd8a\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66dc48ba2250f3b6ec49bd8b\",\n        \"course_id\": \"00011\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    }\n]"
+					"body": "[\n    {\n        \"_id\": \"66da632a0ae14cc26dcc46c8\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of full Stack\"\n    },\n    {\n        \"_id\": \"66da651223eb349b0ae3efec\",\n        \"course_id\": \"0002\",\n        \"course_name\": \"Data Science\",\n        \"Course Description\": \"short Description of Data Science\"\n    },\n    {\n        \"_id\": \"66da653523eb349b0ae3efed\",\n        \"course_id\": \"0003\",\n        \"course_name\": \"Python\",\n        \"Course Description\": \"short Description of Python\"\n    },\n    {\n        \"_id\": \"66da654b23eb349b0ae3efee\",\n        \"course_id\": \"0003\",\n        \"course_name\": \"Python - Game Development\",\n        \"Course Description\": \"short Description of Python - Game Development\"\n    },\n    {\n        \"_id\": \"66da66d2da64e4fccdd8d33b\",\n        \"course_id\": \"0004\",\n        \"course_name\": \"Java - Full Stack\",\n        \"Course Description\": \"short Description of Java - Full Stack\"\n    },\n    {\n        \"_id\": \"66daee76b0591cd9d19f02fb\",\n        \"course_id\": \"0007\",\n        \"course_name\": \"MERN Stack\",\n        \"Course Description\": \"short Description of MERN Stack\"\n    },\n    {\n        \"_id\": \"66db0bf9d47ae386001a04fb\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66db0cfd7c211956dfc69fa5\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66dc48b12250f3b6ec49bd8a\",\n        \"course_id\": \"0001\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66dc48ba2250f3b6ec49bd8b\",\n        \"course_id\": \"00011\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66dd2babf84287d5ac99f177\",\n        \"course_id\": \"00011\",\n        \"course_name\": \"Full Stack\",\n        \"Course Description\": \"short Description of Full Stack\"\n    },\n    {\n        \"_id\": \"66de6db0576b8e883cbd394c\",\n        \"course_id\": \"00012\",\n        \"course_name\": \"New Course\",\n        \"Course Description\": \"short Description of Full Stack\"\n    }\n]"
 				}
 			]
 		},
@@ -198,7 +198,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"moki2\",\r\n    \"password\":\"12345\",\r\n    \"remember\":\"true\"\r\n}",
+					"raw": "{\r\n    \"username\":\"user6\",\r\n    \"phone\":\"987654321\",\r\n    \"agreement\":\"true\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -206,26 +206,26 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/",
+					"raw": "http://localhost:8000/users",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						""
+						"users"
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "Create user",
+					"name": "Success Response",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\":\"user4\",\r\n    \"phone\":\"987654321\",\r\n    \"agreement\":\"true\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"username\":\"user7\",\r\n    \"phone\":\"987654321\",\r\n    \"agreement\":\"true\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -233,14 +233,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/",
+							"raw": "http://localhost:8000/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								""
+								"users"
 							]
 						}
 					},
@@ -262,11 +262,11 @@
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"7b-z/UFW/VYXWz/GIQZ917IHhTPrdA\""
+							"value": "W/\"7b-5zuMV3A6lY13bcXqgnG1UUb8PGs\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 04:44:06 GMT"
+							"value": "Mon, 09 Sep 2024 03:39:23 GMT"
 						},
 						{
 							"key": "Connection",
@@ -278,7 +278,69 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"username\": \"user4\",\n    \"phone\": \"987654321\",\n    \"agreement\": true,\n    \"email\": \"test@gmail.com\",\n    \"_id\": \"66dd2b96f84287d5ac99f175\",\n    \"__v\": 0\n}"
+					"body": "{\n    \"username\": \"user7\",\n    \"phone\": \"987654321\",\n    \"agreement\": true,\n    \"email\": \"test@gmail.com\",\n    \"_id\": \"66de6deb576b8e883cbd394d\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Error Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user7\",\r\n    \"phone\":\"987654321\",\r\n    \"agreement\":\"true\",\r\n    \"email\":\"test@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "118"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"76-CASST4yh1EldHWDEjNtpuOCAJEU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Sep 2024 03:52:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "E11000 duplicate key error collection: LMS-Fullstack_Assignment.users index: username_1 dup key: { username: \"user7\" }"
 				}
 			]
 		},
@@ -288,32 +350,32 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/",
+					"raw": "http://localhost:8000/users",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						""
+						"users"
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "1.1 Get User list",
+					"name": "Success Response",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/",
+							"raw": "http://localhost:8000/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								""
+								"users"
 							]
 						}
 					},
@@ -331,15 +393,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "373"
+							"value": "869"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"175-qnaYr3OxhvydHADrQm0zu9Z8VjU\""
+							"value": "W/\"365-LUFQfu+MO9FTB8/2BGvkGJxTgG0\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 04:43:55 GMT"
+							"value": "Mon, 09 Sep 2024 03:39:52 GMT"
 						},
 						{
 							"key": "Connection",
@@ -351,7 +413,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"66dc4b8e5a11dd02e2f6ff45\",\n        \"username\": \"user1\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66dc4baa5a11dd02e2f6ff47\",\n        \"username\": \"user2\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66dd2a8ab1423c194cfa1220\",\n        \"username\": \"user3\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    }\n]"
+					"body": "[\n    {\n        \"_id\": \"66dc4b8e5a11dd02e2f6ff45\",\n        \"username\": \"user1\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66dc4baa5a11dd02e2f6ff47\",\n        \"username\": \"user2\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66dd2a8ab1423c194cfa1220\",\n        \"username\": \"user3\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66dd2b96f84287d5ac99f175\",\n        \"username\": \"user4\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66de692fe08cd3b9223c4211\",\n        \"username\": \"user5\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66de6c4c5c2addffac9c6b03\",\n        \"username\": \"user6\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"66de6deb576b8e883cbd394d\",\n        \"username\": \"user7\",\n        \"phone\": \"987654321\",\n        \"agreement\": true,\n        \"email\": \"test@gmail.com\",\n        \"__v\": 0\n    }\n]"
 				}
 			]
 		},
@@ -359,23 +421,34 @@
 			"name": "2. get details for course card",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/coursesCard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"coursesCard"
+					]
+				}
 			},
 			"response": [
 				{
-					"name": "New Request",
+					"name": "Success Response",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/courses",
+							"raw": "http://localhost:8000/coursesCard",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"courses"
+								"coursesCard"
 							]
 						}
 					},
@@ -393,15 +466,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "1191"
+							"value": "1190"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"4a7-S96vKeqj8qcj32D/sHBiWlrILXE\""
+							"value": "W/\"4a6-v9QtBGOC8XkKomGt2cP2xIq9PPc\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 04:43:38 GMT"
+							"value": "Mon, 09 Sep 2024 03:40:05 GMT"
 						},
 						{
 							"key": "Connection",
@@ -413,7 +486,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"66dc4d835a11dd02e2f6ff4a\",\n        \"courseTitle\": \"python\",\n        \"shortDescription\": \"short description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    },\n    {\n        \"_id\": \"66dc4db25a11dd02e2f6ff4c\",\n        \"courseTitle\": \"Data Science\",\n        \"shortDescription\": \"short description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    },\n    {\n        \"_id\": \"66dc846a6fb1e5c226d257f9\",\n        \"courseTitle\": \"Java Full Stack\",\n        \"shortDescription\": \"short description input text 11\",\n        \"difficulty\": \"Advanced\",\n        \"courseDuration\": \"12 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    },\n    {\n        \"_id\": \"66dd1b14f45cea3c2f5923d6\",\n        \"courseTitle\": \"Python Full Stack\",\n        \"shortDescription\": \"short description input text 11\",\n        \"difficulty\": \"Advanced\",\n        \"courseDuration\": \"12 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    }\n]"
+					"body": "[\n    {\n        \"_id\": \"66dc4d835a11dd02e2f6ff4a\",\n        \"courseTitle\": \"python\",\n        \"shortDescription\": \"short description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 5,\n        \"reviewCount\": 100,\n        \"discountPercentage\": 8,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    },\n    {\n        \"_id\": \"66dc4db25a11dd02e2f6ff4c\",\n        \"courseTitle\": \"Data Science\",\n        \"shortDescription\": \"short description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    },\n    {\n        \"_id\": \"66dc846a6fb1e5c226d257f9\",\n        \"courseTitle\": \"Java Full Stack\",\n        \"shortDescription\": \"short description input text 11\",\n        \"difficulty\": \"Advanced\",\n        \"courseDuration\": \"12 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    },\n    {\n        \"_id\": \"66dd1b14f45cea3c2f5923d6\",\n        \"courseTitle\": \"Python Full Stack\",\n        \"shortDescription\": \"short description input text 11\",\n        \"difficulty\": \"Advanced\",\n        \"courseDuration\": \"12 months\",\n        \"createdBy\": \"Mathi\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\"\n    }\n]"
 				}
 			]
 		},
@@ -421,23 +494,34 @@
 			"name": "3. get details for Assignment Table",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/assignmentTable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"assignmentTable"
+					]
+				}
 			},
 			"response": [
 				{
-					"name": "2 get details for course card Copy",
+					"name": "Success Response",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8000/assignments",
+							"raw": "http://localhost:8000/assignmentTable",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"assignments"
+								"assignmentTable"
 							]
 						}
 					},
@@ -463,7 +547,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 04:39:27 GMT"
+							"value": "Mon, 09 Sep 2024 03:40:28 GMT"
 						},
 						{
 							"key": "Connection",
@@ -487,7 +571,7 @@
 			},
 			"response": [
 				{
-					"name": "New Request",
+					"name": "Success Response for nav bar",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -525,7 +609,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 04:39:18 GMT"
+							"value": "Mon, 09 Sep 2024 03:40:44 GMT"
 						},
 						{
 							"key": "Connection",
@@ -570,13 +654,13 @@
 			},
 			"response": [
 				{
-					"name": ".0 Create Course",
+					"name": "Success Response",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"courseTitle\":\"Python Full Stack\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
+							"raw": "{\r\n    \"courseTitle\":\"New Course\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"All Day\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":5,\r\n    \"reviewCount\":500,\r\n    \"totalPrice\":3000,\r\n    \"discountPercentage\":30,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -610,15 +694,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "536"
+							"value": "514"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"218-81HP2+0uDxE6ovIbKFXvs8E3ai4\""
+							"value": "W/\"202-/sXg07TaqRUzr7MMboQCdtNmsHE\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 03:33:40 GMT"
+							"value": "Mon, 09 Sep 2024 03:42:21 GMT"
 						},
 						{
 							"key": "Connection",
@@ -630,7 +714,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"courseTitle\": \"Python Full Stack\",\n    \"shortDescription\": \"short description input text 11\",\n    \"description\": \"description input text 11\",\n    \"difficulty\": \"Advanced\",\n    \"courseDuration\": \"12 months\",\n    \"languageSelection\": [\n        \"tamil\",\n        \"english\"\n    ],\n    \"skillscovered\": [\n        \"html\",\n        \"css\",\n        \"react\"\n    ],\n    \"createdBy\": \"Mathi\",\n    \"classSchedule\": \"4 weeks alternate days\",\n    \"availableSlotDate\": \"2024-08-27T18:30:00.000Z\",\n    \"ratingStarValue\": 3,\n    \"reviewCount\": 117,\n    \"totalPrice\": 5000,\n    \"discountPercentage\": 12,\n    \"courseThumnail\": \"/uploadedfile/image1.jpeg\",\n    \"_id\": \"66dd1b14f45cea3c2f5923d6\",\n    \"__v\": 0\n}"
+					"body": "{\n    \"courseTitle\": \"New Course\",\n    \"shortDescription\": \"short description input text 11\",\n    \"description\": \"description input text 11\",\n    \"difficulty\": \"Advanced\",\n    \"courseDuration\": \"12 months\",\n    \"languageSelection\": [\n        \"tamil\",\n        \"english\"\n    ],\n    \"skillscovered\": [\n        \"html\",\n        \"css\",\n        \"react\"\n    ],\n    \"createdBy\": \"Mathi\",\n    \"classSchedule\": \"All Day\",\n    \"availableSlotDate\": \"2024-08-27T18:30:00.000Z\",\n    \"ratingStarValue\": 5,\n    \"reviewCount\": 500,\n    \"totalPrice\": 3000,\n    \"discountPercentage\": 30,\n    \"courseThumnail\": \"/uploadedfile/image1.jpeg\",\n    \"_id\": \"66de6e9d576b8e883cbd3954\",\n    \"__v\": 0\n}"
 				}
 			]
 		},
@@ -663,13 +747,13 @@
 			},
 			"response": [
 				{
-					"name": "3.1 Create Course Copy",
+					"name": "Success Response",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"topic\":\"Assignment 3\",\r\n    \"description\":\"description 3\",\r\n    \"dueDate\":\"2024-08-27T18:30:00.000Z\"\r\n}",
+							"raw": "{\r\n    \"topic\":\"Assignment 4\",\r\n    \"description\":\"description 4\",\r\n    \"dueDate\":\"2024-08-27T18:30:00.000Z\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -707,11 +791,11 @@
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"84-UDzwDuj1MKS9jBr6alwB9cT+Yu8\""
+							"value": "W/\"84-NHPrsE/brqryKUiRKivtwiQCUuA\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 04:00:09 GMT"
+							"value": "Mon, 09 Sep 2024 03:42:43 GMT"
 						},
 						{
 							"key": "Connection",
@@ -723,7 +807,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"topic\": \"Assignment 3\",\n    \"description\": \"description 3\",\n    \"dueDate\": \"2024-08-27T18:30:00.000Z\",\n    \"_id\": \"66dd2149ca200b553deb8fce\",\n    \"__v\": 0\n}"
+					"body": "{\n    \"topic\": \"Assignment 4\",\n    \"description\": \"description 4\",\n    \"dueDate\": \"2024-08-27T18:30:00.000Z\",\n    \"_id\": \"66de6eb3576b8e883cbd3956\",\n    \"__v\": 0\n}"
 				}
 			]
 		},
@@ -758,7 +842,7 @@
 			},
 			"response": [
 				{
-					"name": "3. get details for Assignment Table Copy",
+					"name": "Success Response",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -797,15 +881,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "524"
+							"value": "517"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"20c-VJDCJV34mx3mX/cZKE8B9t/FIBE\""
+							"value": "W/\"205-q4M8JGfrQUtnGeoMEVlwYr73SPE\""
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 08 Sep 2024 04:39:04 GMT"
+							"value": "Mon, 09 Sep 2024 03:43:35 GMT"
 						},
 						{
 							"key": "Connection",
@@ -817,7 +901,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"_id\": \"66dc4d835a11dd02e2f6ff4a\",\n        \"courseTitle\": \"python\",\n        \"shortDescription\": \"short description input text\",\n        \"description\": \"description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"languageSelection\": [\n            \"tamil\",\n            \"english\"\n        ],\n        \"skillscovered\": [\n            \"html\",\n            \"css\",\n            \"react\"\n        ],\n        \"createdBy\": \"Mathi\",\n        \"classSchedule\": \"4 weeks alternate days\",\n        \"availableSlotDate\": \"2024-08-27T18:30:00.000Z\",\n        \"ratingStarValue\": 3,\n        \"reviewCount\": 117,\n        \"totalPrice\": 5000,\n        \"discountPercentage\": 12,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\",\n        \"__v\": 0\n    }\n]"
+					"body": "[\n    {\n        \"_id\": \"66dc4d835a11dd02e2f6ff4a\",\n        \"courseTitle\": \"python\",\n        \"shortDescription\": \"short description input text\",\n        \"description\": \"description input text\",\n        \"difficulty\": \"intermediate\",\n        \"courseDuration\": \"6 months\",\n        \"languageSelection\": [\n            \"tamil\",\n            \"english\"\n        ],\n        \"skillscovered\": [\n            \"html\",\n            \"css\",\n            \"react\"\n        ],\n        \"createdBy\": \"Mathi\",\n        \"classSchedule\": \"2 days in a week\",\n        \"availableSlotDate\": \"2024-08-27T18:30:00.000Z\",\n        \"ratingStarValue\": 5,\n        \"reviewCount\": 100,\n        \"totalPrice\": 5000,\n        \"discountPercentage\": 8,\n        \"courseThumnail\": \"/uploadedfile/image1.jpeg\",\n        \"__v\": 0\n    }\n]"
 				}
 			]
 		}

@@ -1,3 +1,4 @@
+const { Error } = require('mongoose');
 const Users = require('../models/userLogin');
 
 async function createUserInDB(data) {
@@ -6,7 +7,7 @@ async function createUserInDB(data) {
     return createdUser;
   } catch (error) {
     console.error(error.message);
-    return error.message;
+    throw new Error(error.message);
   }
 }
 
@@ -16,7 +17,7 @@ async function getUserFromDB() {
     return userList;
   } catch (error) {
     console.error(error.message);
-    return error.message;
+    throw new Error(error.message);
   }
 }
 
