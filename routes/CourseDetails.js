@@ -1,5 +1,5 @@
 var express = require('express');
-const { getAvailableCourse } = require('../controller/Course-Controller');
+const { getAvailableCourseWithQuery } = require('../controller/Course-Controller');
 var router = express.Router();
 
 // app level routes level
@@ -8,6 +8,6 @@ router.use((req, res, next) => {
     next();
 });
 
-router.get('/', getAvailableCourse);
+router.get('/', getAvailableCourseWithQuery);
 
 module.exports = router;

@@ -86,3 +86,67 @@
 "HTTPversion": 1.1 
 "ResponseTime": 13.770 ms 
 "User": "-"
+
+"Date_Time": Mon, 09 Sep 2024 06:32:43 GMT 
+"IP": ::1 
+"Method_and_Route": "GET > /courseDetails" 
+"StatusCode": 200 
+"HTTPversion": 1.1 
+"ResponseTime": 31.071 ms 
+"User": "-"
+
+"Date_Time": Mon, 09 Sep 2024 06:32:49 GMT 
+"IP": ::1 
+"Method_and_Route": "GET > /courseDetails" 
+"StatusCode": 200 
+"HTTPversion": 1.1 
+"ResponseTime": 5.711 ms 
+"User": "-"
+
+"Date_Time": Mon, 09 Sep 2024 06:33:06 GMT 
+"IP": ::1 
+"Method_and_Route": "GET > /courseDetails" 
+"StatusCode": 200 
+"HTTPversion": 1.1 
+"ResponseTime": 3.448 ms 
+"User": "-"
+
+"Date_Time": Mon, 09 Sep 2024 06:33:54 GMT 
+"IP": ::1 
+"Method_and_Route": "GET > /courseDetails" 
+"StatusCode": 200 
+"HTTPversion": 1.1 
+"ResponseTime": 2.793 ms 
+"User": "-"
+
+"Date_Time": Mon, 09 Sep 2024 06:34:19 GMT 
+"IP": ::1 
+"Method_and_Route": "GET > /courseDetails" 
+"StatusCode": 200 
+"HTTPversion": 1.1 
+"ResponseTime": 2.805 ms 
+"User": "-"
+
+"Date_Time": Mon, 09 Sep 2024 06:34:27 GMT 
+"IP": ::1 
+"Method_and_Route": "POST > /users" 
+"StatusCode": 400 
+"HTTPversion": 1.1 
+"ResponseTime": 11.558 ms 
+"User": "-"
+
+"Date_Time": Mon, 09 Sep 2024 06:34:44 GMT 
+"IP": ::1 
+"Method_and_Route": "POST > /editContent/editCourses" 
+"StatusCode": 400 
+"HTTPversion": 1.1 
+"ResponseTime": 5.492 ms 
+"User": "-"
+
+"Date_Time": Mon, 09 Sep 2024 06:34:49 GMT 
+"IP": ::1 
+"Method_and_Route": "POST > /editContent/editCourses" 
+"StatusCode": 400 
+"HTTPversion": 1.1 
+"ResponseTime": 4.021 ms 
+"User": "-"

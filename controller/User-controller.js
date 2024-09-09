@@ -7,10 +7,10 @@ async function getAllusers(req, res) {
     } catch (e) {
         res.status(404).send(e.message);
         /* 
-            Staus Code - 404
-            Specifies - Not Found
-                As an indication that the Database needs to looked at to retify this
-            */
+        Staus Code - 404
+        Specifies - Not Found
+            As an indication that the Database needs to looked at to retify this error for mostly duplicate entry
+        */
     }
 }
 

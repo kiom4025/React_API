@@ -715,6 +715,69 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"courseTitle\": \"New Course\",\n    \"shortDescription\": \"short description input text 11\",\n    \"description\": \"description input text 11\",\n    \"difficulty\": \"Advanced\",\n    \"courseDuration\": \"12 months\",\n    \"languageSelection\": [\n        \"tamil\",\n        \"english\"\n    ],\n    \"skillscovered\": [\n        \"html\",\n        \"css\",\n        \"react\"\n    ],\n    \"createdBy\": \"Mathi\",\n    \"classSchedule\": \"All Day\",\n    \"availableSlotDate\": \"2024-08-27T18:30:00.000Z\",\n    \"ratingStarValue\": 5,\n    \"reviewCount\": 500,\n    \"totalPrice\": 3000,\n    \"discountPercentage\": 30,\n    \"courseThumnail\": \"/uploadedfile/image1.jpeg\",\n    \"_id\": \"66de6e9d576b8e883cbd3954\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "Error Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"courseTitle\":\"Python Full Stack\",\r\n    \"shortDescription\":\"short description input text 11\",\r\n    \"description\":\"description input text 11\",\r\n    \"difficulty\":\"Advanced\",\r\n    \"courseDuration\":\"12 months\",\r\n    \"languageSelection\":[\"tamil\",\"english\"],\r\n    \"skillscovered\":[\"html\",\"css\",\"react\"],\r\n    \"createdBy\":\"Mathi\",\r\n    \"classSchedule\":\"4 weeks alternate days\",\r\n    \"availableSlotDate\":\"2024-08-27T18:30:00.000Z\",\r\n    \"ratingStarValue\":3,\r\n    \"reviewCount\":117,\r\n    \"totalPrice\":5000,\r\n    \"discountPercentage\":12,\r\n    \"courseThumnail\":\"/uploadedfile/image1.jpeg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/editContent/editCourses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"editContent",
+								"editCourses"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "138"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8a-VEa+fRLhow7B/Ry8sRKLb0fi3qM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 09 Sep 2024 06:34:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "E11000 duplicate key error collection: LMS-Fullstack_Assignment.courses index: courseTitle_1 dup key: { courseTitle: \"Python Full Stack\" }"
 				}
 			]
 		},

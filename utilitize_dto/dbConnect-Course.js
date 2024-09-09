@@ -7,7 +7,7 @@ async function createCourseInDB(data) {
     return createdUser;
   } catch (error) {
     console.error(error.message);
-    return error.message;
+    throw new Error(error.message);
   }
 }
 
@@ -17,7 +17,7 @@ async function getAvailableCourseFromDB(findQuery) {
     return CourseList;
   } catch (error) {
     console.error(error.message);
-    return error.message;
+    throw new Error(error.message);
   }
 }
 
@@ -27,7 +27,7 @@ async function getCourseDetailsFromDB(findQuery) {
     return CourseList;
   } catch (error) {
     console.error(error.message);
-    return error.message;
+    throw new Error(error.message);
   }
 }
 
