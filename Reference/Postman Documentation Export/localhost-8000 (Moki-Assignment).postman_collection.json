@@ -121,6 +121,11 @@
 								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1va2kiLCJyb2xlIjoidXNlciIsImlhdCI6MTcyNTg4ODUxOCwiZXhwIjoxNzI1ODkyMTE4fQ.uYxAs2nabpsnEH20e6uCXzZW-z60x4Z6LBHt9Fd-Og0",
 								"description": "user token (this gives response for user token because the role validation is not set for this route",
 								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "username - without ORM",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -299,6 +304,11 @@
 								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1va2kiLCJyb2xlIjoidXNlciIsImlhdCI6MTcyNTg4ODUxOCwiZXhwIjoxNzI1ODkyMTE4fQ.uYxAs2nabpsnEH20e6uCXzZW-z60x4Z6LBHt9Fd-Og0",
 								"description": "user token (this gives response for user token because the role validation is not set for this route",
 								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "username - without ORM",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -418,6 +428,11 @@
 								"description": "admin",
 								"type": "text",
 								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "username",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -556,6 +571,11 @@
 								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluMDEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4ODg0NjQsImV4cCI6MTcyNTg5MjA2NH0.KdiXuhB0KDHhtP_whar64iqvYx_8Qc2lfqR3vUJVGDI",
 								"description": "admin",
 								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "username",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -631,6 +651,11 @@
 								"key": "authorization",
 								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluMDEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4ODg0NjQsImV4cCI6MTcyNTg5MjA2NH0.KdiXuhB0KDHhtP_whar64iqvYx_8Qc2lfqR3vUJVGDI",
 								"description": "admin",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "admin",
 								"type": "text"
 							}
 						],
@@ -810,6 +835,11 @@
 								"description": "admin",
 								"type": "text",
 								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "username",
+								"type": "text"
 							}
 						],
 						"url": {
@@ -979,6 +1009,11 @@
 								"description": "admin",
 								"type": "text",
 								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "username",
+								"type": "text"
 							}
 						],
 						"url": {
@@ -1148,6 +1183,11 @@
 								"description": "admin",
 								"type": "text",
 								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "username",
+								"type": "text"
 							}
 						],
 						"url": {
@@ -1249,6 +1289,11 @@
 								"description": "admin",
 								"type": "text",
 								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "username",
+								"type": "text"
 							}
 						],
 						"url": {
@@ -1858,6 +1903,11 @@
 								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluMDEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4ODg0NjQsImV4cCI6MTcyNTg5MjA2NH0.KdiXuhB0KDHhtP_whar64iqvYx_8Qc2lfqR3vUJVGDI",
 								"description": "admin",
 								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "admin",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -1934,6 +1984,11 @@
 								"key": "authorization",
 								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluMDEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjU4ODg0NjQsImV4cCI6MTcyNTg5MjA2NH0.KdiXuhB0KDHhtP_whar64iqvYx_8Qc2lfqR3vUJVGDI",
 								"description": "admin",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "admin",
 								"type": "text"
 							}
 						],
@@ -2213,6 +2268,11 @@
 								"description": "admin",
 								"type": "text",
 								"disabled": true
+							},
+							{
+								"key": "User-Agent",
+								"value": "username",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -2313,7 +2373,13 @@
 					"name": "Success Response for user role",
 					"originalRequest": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "username",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"username\":\"moki\",\r\n    \"password\":\"987654321\"\r\n}",
@@ -2381,6 +2447,11 @@
 								"key": "admin",
 								"value": "true",
 								"description": "To create a token for the existing user as admin then this admin key value pair has to be placed in the headers",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "admin",
 								"type": "text"
 							}
 						],
@@ -2522,6 +2593,11 @@
 								"value": "true",
 								"description": "To create a token for the existing user as admin then this admin key value pair has to be placed in the headers",
 								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "username",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -2581,6 +2657,129 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"message\": \"Wrong Password - User Authentication failed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Assignment Upload with username in header",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1va2kiLCJyb2xlIjoidXNlciIsImlhdCI6MTcyNjI3Njc2NywiZXhwIjoxNzI2MjgwMzY3fQ.Bl-9-wgot4X_6LUhgUai-oUVWPnEIcphhPrr6hDXmWg",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "mokitest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": [
+								"/C:/Users/moki4/Documents/_LMES/Loki.jpg",
+								"/C:/Users/moki4/Documents/_LMES/receipt.pdf"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/assignmentUpload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"assignmentUpload"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1va2kiLCJyb2xlIjoidXNlciIsImlhdCI6MTcyNjI3Njc2NywiZXhwIjoxNzI2MjgwMzY3fQ.Bl-9-wgot4X_6LUhgUai-oUVWPnEIcphhPrr6hDXmWg",
+								"type": "text"
+							},
+							{
+								"key": "User-Agent",
+								"value": "mokitest2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/moki4/Documents/_LMES/Loki.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/assignmentUpload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"assignmentUpload"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-cb4vTjiTN3rjexgljp7d7mESVTc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 14 Sep 2024 01:40:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "File uploaded"
 				}
 			]
 		}

@@ -14,6 +14,7 @@ var courseCard = require('./routes/CourseCard')
 var Add_Modify = require('./routes/Add_Modify');
 var Assignment_Table = require('./routes/Assignment_Table')
 var CourseDetails = require('./routes/CourseDetails');
+var assignmentUpload = require('./routes/Assignment_Upload');
 var authRouter = require('./routes/Auth');
 
 var app = express();
@@ -44,7 +45,8 @@ var accessLogStream = rfs.createStream('access.log', {
 app.use(logger('dev'));
 // 2. Customized Error Log (ref: https://www.npmjs.com/package/morgan#short)
 // To get the log in the format we want - We need to place the respective token (ref above site) in order and we can also keep delimiter like '|' in-between token as per our needs
-app.use(logger('"Date_Time": :date[web] | "IP": :remote-addr | "Method_and_Route": ":method > :url" | "StatusCode": :status | "HTTPversion": :http-version | "ResponseTime": :response-time ms | "User": ":remote-user"', { stream: accessLogStream }));
+app.use(logger('"Date_Time": :date[web] | "IP": :remote-addr | "Method_and_Route": ":method > :url" | "StatusCode": :status | "HTTPversion": :http-version | "ResponseTime": :response-time ms | "User": ":user-agent"', { stream: accessLogStream }));
+// Note: Make sure to include the username in the header in "User-Agent" to reflect in the log
 // 3. Pre-Defined Error Log Format
 // app.use(logger('combined', { stream: accessLogStream }));
 
@@ -86,6 +88,7 @@ app.use('/coursesCard', courseCard);
 app.use('/courseDetails', CourseDetails);
 app.use('/editContent', Add_Modify);
 app.use('/assignmentTable', Assignment_Table);
+app.use('/assignmentUpload', assignmentUpload);
 
 
 // catch 404 and forward to error handler
